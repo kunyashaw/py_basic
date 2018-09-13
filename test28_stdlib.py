@@ -50,6 +50,17 @@ print(q.match('cdt'))
 # abccccd
 # abc*
 
+# 第一个：要匹配的规则 第二个:字符串替换成的内容 第三个 将要替换的字符串
+phone = "123-456-789 # 这是电话号码"
+p2 = re.sub(r'#.*$','',phone)
+print(p2)
+p3 = re.sub(r'\D','',p2)
+print(p3)
+
+
+
+
+
 
 
 
